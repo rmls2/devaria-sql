@@ -1,0 +1,1 @@
+#criação do Read-me do modulo 6 do curso full stack da Devaria
