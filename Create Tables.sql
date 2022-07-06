@@ -6,6 +6,7 @@ CREATE DATABASE DevariaCandies;
 --ROLLBACK
 
 BEGIN TRANSACTION
+/*criação da tabela de cliente*/
 
 CREATE TABLE Cliente
 (
@@ -31,6 +32,7 @@ CREATE TABLE Fidelidade
 	CONSTRAINT FK_CodigoCliente_Fidelidade FOREIGN KEY (Codigo_Cliente) REFERENCES Cliente(Codigo)
 )
 
+/*criação da tabela de forma de pagamento*/
 
 CREATE TABLE Forma_Pagamento
 (
@@ -88,6 +90,7 @@ CREATE TABLE Item_Pedido_Venda
 	CONSTRAINT FK_CodigoVenda FOREIGN KEY (Codigo_Pedido_Venda) REFERENCES Pedido_Venda(Codigo)
 )
 
+/*criação da tabela de distribuidor*/
 
 CREATE TABLE Distribuidor 
 (
